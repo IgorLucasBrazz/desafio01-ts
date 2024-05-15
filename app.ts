@@ -1,9 +1,13 @@
-import { CompanyAccount } from './class/CompanyAccount'
+import { CompanyAccount} from './class/CompanyAccount'
 import { PeopleAccount } from './class/PeopleAccount'
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
-console.log(peopleAccount)
-peopleAccount.deposit()
-const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
-companyAccount.deposit()
-console.log(companyAccount)
+const Maria: PeopleAccount = new PeopleAccount(1, 'Igor', 200)
+
+Maria.deposit(200)
+Maria.getBalance()
+Maria.withdraw(120)
+
+
+const Dio: CompanyAccount = new CompanyAccount('Dio', 123)
+
+Dio.getLoan(1000)
